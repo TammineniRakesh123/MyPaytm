@@ -19,7 +19,7 @@ namespace Test.Pages
             _driver = driver;
             PageFactory.InitElements(_driver, this);
         }
-        [FindsBy(How = How.CssSelector, Using = ".fusion-main-menu a[href*='about']")]
+        [FindsBy(How = How.CssSelector, Using = ".fusion-main-menu a[href*='http://www.paytm.com/recharge']")]
         private IWebElement Mobile;
         public bool seeIfPresent()
         {
