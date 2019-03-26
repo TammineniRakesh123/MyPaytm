@@ -30,7 +30,7 @@ namespace Paytm_learn
         [Given]
         public void GivenThenEnterTheMobileNumberAmount()
         {
-            _paytmmobil.EnterNumber(new ProprtiesClass().Mobilenumber);
+            _paytmmobil.EnterNumber("8296865364");
             _paytmmobil.EnterTheAmount(new ProprtiesClass().amount);
         }
 
@@ -56,6 +56,12 @@ namespace Paytm_learn
         public void ThenItShouldRedirectTo_P0(string p0)
         {
             Assert.IsNotNull(driver.FindElement(By.XPath("//*[@id='app']/div/div[4]/div[2]")));
+        }
+        [AfterScenario]
+        public void Dispose()
+        {
+            driver.Close();
+            driver.Dispose();
         }
     }
 }

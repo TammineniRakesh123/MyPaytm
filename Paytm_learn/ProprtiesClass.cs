@@ -8,8 +8,8 @@ namespace Paytm_learn
 {
     class ProprtiesClass
     {
-        private string _mobilenumber;
-        private string _amount;
+        private string _mobilenumber="8296865364";
+        private string _amount="448";
         public string Mobilenumber
         {
             get
@@ -18,7 +18,7 @@ namespace Paytm_learn
             }
             set
             {
-                _mobilenumber = "8296865364";
+                _mobilenumber = value; 
             }
         }
         public string amount
@@ -29,7 +29,7 @@ namespace Paytm_learn
             }
             set
             {
-                _amount = "448";
+                _amount = value;
             }
         }
     }

@@ -84,6 +84,7 @@
     <Compile Include="PaytmWebsiteValidationSteps.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ProprtiesClass.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
