@@ -30,8 +30,8 @@ namespace Paytm_learn
         [Given]
         public void GivenThenEnterTheMobileNumberAmount()
         {
-            _paytmmobil.EnterNumber("8296865364");
-            _paytmmobil.EnterTheAmount("448");
+            _paytmmobil.EnterNumber(new ProprtiesClass().Mobilenumber);
+            _paytmmobil.EnterTheAmount(new ProprtiesClass().amount);
         }
         
         [When]
