@@ -11,9 +11,9 @@ namespace Test.Pages
 {
     public class PaytmMobilePage
     {
-       private IWebDriver _driver;
-       private WebDriverWait wait;
- 
+        private IWebDriver _driver;
+        private WebDriverWait wait;
+
         public PaytmMobilePage(IWebDriver driver)
         {
             _driver = driver;
@@ -32,7 +32,7 @@ namespace Test.Pages
         public void ProceedToRecharge()
         {
             _driver.FindElement(By.XPath(ElementsPath._rechargebutton)).SendKeys(Keys.Return);
-            
+
         }
     }
 }

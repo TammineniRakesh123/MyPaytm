@@ -20,38 +20,38 @@ namespace Paytm_learn
             _paytmhome = new PaytmHomePage(driver);
             _paytmhome.goToPage();
         }
-        
+
         [Given]
         public void GivenINavigateToMobileTab()
         {
             _paytmmobil = _paytmhome.goToPaytmMobilePage();
         }
-        
+
         [Given]
         public void GivenThenEnterTheMobileNumberAmount()
         {
             _paytmmobil.EnterNumber(new ProprtiesClass().Mobilenumber);
             _paytmmobil.EnterTheAmount(new ProprtiesClass().amount);
         }
-        
+
         [When]
         public void WhenInsideThePaytmWebsite()
         {
             _paytmhome.seeIfPresent();
         }
-        
+
         [When]
         public void WhenClickedOnProceedToRecharge()
         {
             _paytmmobil.ProceedToRecharge();
         }
-        
+
         [Then]
         public void ThenThereShouldBeMobileElectricityDTHMetro()
         {
             Assert.IsFalse(_noelementfound);
         }
-        
+
         [Then]
         public void ThenItShouldRedirectTo_P0(string p0)
         {
